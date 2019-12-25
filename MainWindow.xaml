@@ -1,0 +1,33 @@
+﻿<Window x:Class="kaoshi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kaoshi"
+        mc:Ignorable="d"
+        Title="Demo" Height="450" Width="800">
+    <StackPanel Margin="0,0,0,0">
+        <TextBlock Text="请在下方输入有效Email地址："/>
+        <TextBox Text="{Binding Dress}"/>
+        <DockPanel>
+            <TextBlock Text="请在下方输入Email正文："/>
+            <Button Content="…" HorizontalAlignment="Right" Click="GetZhengWen"/>
+        </DockPanel>
+        <DockPanel>
+            <TextBox Height="200"  Text="{Binding Zhengwen}" DockPanel.Dock="Top" HorizontalScrollBarVisibility="Visible"/>
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Text="请在下方输入或选择附件图片："/>
+            <Button Content="…" HorizontalAlignment="Right" Click="ShowFile"/>
+        </DockPanel>
+
+        <TextBox Text="{Binding PictureFileName,UpdateSourceTrigger=PropertyChanged}"/>
+        <DockPanel Height="110" HorizontalAlignment="Center" Width="795">
+            <Label Content="图片预览" DockPanel.Dock="Top" SnapsToDevicePixels="True"/>
+            <Image Source="{Binding PictureFileName}" Width="152"/>
+        </DockPanel>
+        <Button Content="确定" Click="CheckAll"/>
+
+
+    </StackPanel>
+</Window>
