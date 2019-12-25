@@ -40,7 +40,8 @@ namespace kaoshi
             {
                 Multiselect = false,//该值确定是否可以选择多个文件
                 Title = "请选择文件夹",
-                Filter = "所有文件(*.*)|*.*"
+                Filter = "所有文件(*.*)|*.*",
+                
             };
             if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
@@ -50,6 +51,12 @@ namespace kaoshi
 
         private void GetZhengWen(object sender, RoutedEventArgs e)
         {
+            /*
+            Opentext fm = new Opentext();
+            fm.Show();
+            */
+
+            
             string filePath="";
             OpenFileDialog dialog = new OpenFileDialog
             {

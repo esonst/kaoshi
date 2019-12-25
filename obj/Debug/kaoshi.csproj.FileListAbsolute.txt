@@ -12,3 +12,6 @@ E:\课程\程序设计\kaoshi\obj\Debug\kaoshi.Properties.Resources.resources
 E:\课程\程序设计\kaoshi\obj\Debug\kaoshi.csproj.GenerateResource.cache
 E:\课程\程序设计\kaoshi\obj\Debug\kaoshi.exe
 E:\课程\程序设计\kaoshi\obj\Debug\kaoshi.pdb
+E:\课程\程序设计\kaoshi\obj\Debug\Opentext.g.cs
+E:\课程\程序设计\kaoshi\obj\Debug\OpenTextFileDialog.baml
+E:\课程\程序设计\kaoshi\obj\Debug\Opentext.baml
